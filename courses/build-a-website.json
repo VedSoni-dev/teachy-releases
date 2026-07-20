@@ -1,0 +1,347 @@
+{
+  "id": "build-a-website",
+  "title": "Build & Deploy a Website",
+  "subtitle": "From zero to a live site the world can visit",
+  "description": "Build a real personal website from scratch with HTML & CSS, then deploy it to GitHub Pages so anyone on the internet can see it.",
+  "iconSystemName": "display",
+  "estimatedMinutes": 45,
+  "startURL": "https://github.com/new",
+  "teacherName": "Teachy",
+  "learningOutcomes": [
+    "Understand how websites work (HTML structure, CSS styling, browser rendering)",
+    "Write real HTML with headings, paragraphs, links, images, and navigation",
+    "Style a site with CSS — colors, fonts, spacing, and responsive layout",
+    "Use Git to track changes and push code to GitHub",
+    "Deploy a live website to GitHub Pages with a public URL",
+    "Share a real link that anyone in the world can open"
+  ],
+  "artifact": {
+    "kind": "website",
+    "icon": "globe",
+    "initialState": "no files, no site, nothing exists yet",
+    "finalState": "a live personal website deployed on GitHub Pages with a public URL",
+    "previewIfNoProgress": "No website yet — let's build one",
+    "milestones": [
+      { "stepID": "create-html-file", "description": "HTML file created" },
+      { "stepID": "style-with-css", "description": "CSS styles applied" },
+      { "stepID": "deploy-to-github-pages", "description": "Live on the internet" }
+    ]
+  },
+  "goals": [
+    {
+      "id": "plan-your-site",
+      "title": "Plan your site",
+      "goal": "Decide what your website is about and what content goes on it — even a rough sketch is enough.",
+      "outcome": "You know what your site is called, what it's about, and roughly what goes on the page.",
+      "coachAsk": "Help me plan a personal website. I'm not sure where to start — what should I think about before writing any code?",
+      "doneWhen": "The learner can describe in one sentence what their site is about and roughly what will be on it.",
+      "tips": [
+        "A personal site only needs one page to start",
+        "Think: who is this for? what do they need to see?",
+        "Keep it simple — you can always add more later"
+      ],
+      "teachingContext": {
+        "concepts": [
+          "what a website actually is (files a browser reads)",
+          "the difference between HTML (structure) and CSS (style)",
+          "pages, navigation, and content hierarchy"
+        ],
+        "commonMistakes": [
+          "trying to plan every pixel before writing any code",
+          "making it too complicated — multiple pages, forms, databases",
+          "not choosing a topic and getting stuck in analysis paralysis"
+        ],
+        "successExamples": [
+          "I want a simple page about my cat with a photo, a bio, and a contact email",
+          "I want a portfolio with my name, what I do, and three project cards"
+        ],
+        "whyItMatters": "A clear plan means every line of code has a purpose — no wasted effort."
+      },
+      "toolPolicy": "pointOnly"
+    },
+    {
+      "id": "create-html-file",
+      "title": "Create your first HTML file",
+      "goal": "Set up a project folder and write a valid HTML file that opens in a browser.",
+      "outcome": "A file called index.html that opens in your browser and shows some text.",
+      "coachAsk": "Help me create my first HTML file. I have a plan for my site — now I need to set up a folder and write the code. Open Terminal or Finder and walk me through it.",
+      "doneWhen": "A file named index.html exists in a project folder and opens in a browser showing visible content.",
+      "tips": [
+        "index.html is the standard name for a homepage",
+        "You can open any .html file by double-clicking it",
+        "Don't worry about making it pretty yet — just get text on screen"
+      ],
+      "teachingContext": {
+        "concepts": [
+          "HTML document skeleton (doctype, html, head, body)",
+          "what goes in <head> (title, charset, viewport) vs <body> (visible content)",
+          "opening the file in a browser to preview"
+        ],
+        "commonMistakes": [
+          "forgetting the closing </body> or </html> tags",
+          "putting visible content inside <head> instead of <body>",
+          "naming the file something other than index.html and getting confused later"
+        ],
+        "successExamples": [
+          "Double-click index.html and you see your text in the browser",
+          "The browser tab shows your page title"
+        ],
+        "whyItMatters": "Every website starts with a single HTML file — this is the foundation everything else builds on."
+      },
+      "toolPolicy": "helpWhenStuck",
+      "remediationGoalID": "plan-your-site",
+      "artifactDelta": "HTML file created"
+    },
+    {
+      "id": "add-content",
+      "title": "Add real content",
+      "goal": "Fill the page with actual content — a heading, paragraphs, a link, and an image.",
+      "outcome": "The page has a title, some text about you or your topic, a clickable link, and an image.",
+      "coachAsk": "My HTML file exists but it's mostly empty. Help me add real content — a heading, some paragraphs, maybe a link and an image.",
+      "doneWhen": "The page has at least a heading, a paragraph, one link, and one image (or clear placeholder).",
+      "tips": [
+        "Use <h1> for the main title, <h2> for section headings",
+        "Images need both a file and alt text: <img src=\"photo.jpg\" alt=\"description\">",
+        "Links use <a href=\"https://...\">text</a>"
+      ],
+      "teachingContext": {
+        "concepts": [
+          "heading hierarchy (h1 through h6 — don't skip levels)",
+          "paragraphs with <p>",
+          "anchor links with <a href>",
+          "images with <img src> and alt text",
+          "what alt text is for (accessibility + broken image fallback)"
+        ],
+        "commonMistakes": [
+          "using headings just to make text big (use CSS for that)",
+          " forgetting alt text on images",
+          "putting block content inside inline elements (e.g. a heading inside a link)",
+          "using absolute URLs for local images that won't work when deployed"
+        ],
+        "successExamples": [
+          "The page clearly tells a story: title → intro → details → link",
+          "Images load and have descriptive alt text"
+        ],
+        "whyItMatters": "Content is why people visit your site. Without real content, it's just an empty frame."
+      },
+      "toolPolicy": "preferPointing",
+      "remediationGoalID": "create-html-file",
+      "artifactDelta": "Content added"
+    },
+    {
+      "id": "style-with-css",
+      "title": "Style with CSS",
+      "goal": "Make the page look intentional with colors, fonts, spacing, and layout.",
+      "outcome": "The page has a background color, readable fonts, proper spacing, and looks designed rather than raw.",
+      "coachAsk": "My page has content but it looks like a plain document. Help me add CSS to make it look like a real website — colors, fonts, and layout.",
+      "doneWhen": "The page has custom colors, fonts, spacing, and at least one layout technique (centering, flexbox, or grid).",
+      "tips": [
+        "A <style> tag in <head> is the fastest way to start",
+        "body { font-family: system-ui; } gives you a modern font for free",
+        "margin: 0 auto; centers content; max-width keeps it readable"
+      ],
+      "teachingContext": {
+        "concepts": [
+          "CSS selectors (element, class, id)",
+          "the box model (margin, border, padding, content)",
+          "flexbox for layout (display: flex, justify-content, align-items)",
+          "responsive units (rem, %, max-width) vs fixed pixels",
+          "color: hex vs named colors vs rgb"
+        ],
+        "commonMistakes": [
+          "using !important to fix specificity issues instead of learning selectors",
+          "hardcoding pixel widths that break on different screens",
+          "putting CSS inline (style=\"...\") instead of in a stylesheet or <style> block",
+          "not testing at different browser widths"
+        ],
+        "successExamples": [
+          "The page looks clean and intentional at desktop width",
+          "Content is centered and has breathing room",
+          "Fonts are readable and consistent"
+        ],
+        "whyItMatters": "CSS is the difference between a document and a designed experience. It's what makes people stay."
+      },
+      "toolPolicy": "helpWhenStuck",
+      "remediationGoalID": "add-content",
+      "artifactDelta": "CSS styles applied"
+    },
+    {
+      "id": "make-it-responsive",
+      "title": "Make it responsive",
+      "goal": "Ensure the site looks good on phones, tablets, and desktops.",
+      "outcome": "The site adapts to different screen sizes — text is readable, nothing overflows, images scale.",
+      "coachAsk": "My site looks good on my laptop but probably breaks on a phone. Help me make it responsive so it works everywhere.",
+      "doneWhen": "The site looks usable at 320px width (phone) and 1200px+ (desktop) with no horizontal scrolling.",
+      "tips": [
+        "The viewport meta tag is required: <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+        "max-width: 100% on images prevents overflow",
+        "Media queries (@media) change styles at different breakpoints"
+      ],
+      "teachingContext": {
+        "concepts": [
+          "the viewport meta tag (without it, phones render at 960px)",
+          "mobile-first design (style for small screens first, add complexity for large)",
+          "media queries (@media screen and (min-width: 768px))",
+          "flexible units (%, vw, rem) vs fixed pixels",
+          "flex-wrap for multi-item layouts"
+        ],
+        "commonMistakes": [
+          "forgetting the viewport meta tag entirely",
+          "using fixed pixel widths on containers",
+          "designing for desktop first and bolting on mobile later",
+          "not testing on an actual phone or narrow browser window"
+        ],
+        "successExamples": [
+          "Open the site on your phone and it looks like it was made for it",
+          "Resize the browser window and content reflows smoothly",
+          "No horizontal scrollbar at any width"
+        ],
+        "whyItMatters": "Over half of web traffic is mobile. A site that only works on desktop is broken for most people."
+      },
+      "toolPolicy": "preferPointing",
+      "remediationGoalID": "style-with-css",
+      "artifactDelta": "Responsive layout"
+    },
+    {
+      "id": "add-more-pages",
+      "title": "Add more pages",
+      "goal": "Create a second page and link between pages with a consistent navigation menu.",
+      "outcome": "At least two pages exist (e.g. index.html + about.html) with a nav that links between them.",
+      "coachAsk": "My one page looks great. Help me add a second page — like an About or Projects page — and link them together so visitors can navigate.",
+      "doneWhen": "A second .html file exists with real content, and a <nav> element on both pages links between them.",
+      "tips": [
+        "Copy index.html as a starting point for the new page",
+        "Keep the nav identical on both pages (same links, same order)",
+        "Use relative links: <a href=\"about.html\"> not absolute paths"
+      ],
+      "teachingContext": {
+        "concepts": [
+          "relative vs absolute paths",
+          "consistent navigation across pages",
+          "the <nav> semantic element",
+          "copy-paste as a starting point (DRY comes later)"
+        ],
+        "commonMistakes": [
+          "using different nav structures on different pages",
+          "broken links because of wrong file paths",
+          "putting the nav inside the wrong element",
+          "copying the page but forgetting to update the <title>"
+        ],
+        "successExamples": [
+          "Clicking About in the nav takes you to about.html and back",
+          "Both pages share the same visual style and nav layout",
+          "The browser tab title is different on each page"
+        ],
+        "whyItMatters": "A website with one page is a flyer. Multiple pages with navigation is a site."
+      },
+      "toolPolicy": "preferPointing",
+      "remediationGoalID": "make-it-responsive",
+      "artifactDelta": "Multi-page site"
+    },
+    {
+      "id": "push-to-github",
+      "title": "Push to GitHub",
+      "goal": "Initialize a Git repo and push your site to GitHub so it's backed up and ready to deploy.",
+      "outcome": "Your site code is on GitHub in a repository with all your files committed.",
+      "coachAsk": "My site is done locally. Help me put it on GitHub so it's saved online and ready to deploy.",
+      "doneWhen": "A GitHub repository exists with all site files committed and pushed.",
+      "tips": [
+        "git init → git add . → git commit → git push",
+        "Add a .gitignore with just .DS_Store to keep macOS junk out",
+        "Name the repo something simple like my-website"
+      ],
+      "teachingContext": {
+        "concepts": [
+          "Git tracks changes to files over time",
+          "git init, git add, git commit, git push — the core loop",
+          "GitHub is where your Git repo lives online",
+          "README.md is the file GitHub shows on the repo homepage"
+        ],
+        "commonMistakes": [
+          "running git commands in the wrong directory",
+          "committing before adding files (git add first)",
+          "forgetting to create the GitHub repo before pushing",
+          "pushing to main vs main branch naming confusion"
+        ],
+        "successExamples": [
+          "git status shows 'nothing to commit' and git remote -v shows your GitHub URL",
+          "Opening github.com/YOU/repo-name shows all your files"
+        ],
+        "whyItMatters": "Git is your safety net — you can always go back. GitHub is where your code lives before it goes live."
+      },
+      "toolPolicy": "helpWhenStuck",
+      "remediationGoalID": "add-more-pages",
+      "artifactDelta": "Code on GitHub"
+    },
+    {
+      "id": "deploy-to-github-pages",
+      "title": "Deploy to GitHub Pages",
+      "goal": "Turn your GitHub repo into a live website with a public URL anyone can visit.",
+      "outcome": "Your site is live at https://yourusername.github.io/repo-name/ and you can share the link.",
+      "coachAsk": "My code is on GitHub. Help me deploy it to GitHub Pages so I can share a live link with anyone.",
+      "doneWhen": "A browser is visible showing the site loaded at a public https://username.github.io/... URL — not a local file:// path — with the site content visible and no 404 error.",
+      "tips": [
+        "Settings → Pages → Source: main branch → Save",
+        "It takes 1-2 minutes to deploy the first time",
+        "If it 404s, check that your main file is named index.html"
+      ],
+      "teachingContext": {
+        "concepts": [
+          "GitHub Pages serves your repo as a website for free",
+          "Settings → Pages → choose your branch",
+          "the deployment URL format: username.github.io/repo-name",
+          "pushing a new commit triggers automatic redeployment"
+        ],
+        "commonMistakes": [
+          "forgetting to enable GitHub Pages in Settings",
+          "selecting the wrong branch (use main, not a feature branch)",
+          "naming the file something other than index.html (GitHub Pages looks for index.html as the homepage)",
+          "not waiting long enough for the first deploy"
+        ],
+        "successExamples": [
+          "The URL loads and shows your site exactly as it looks locally",
+          "You can share the link and someone else can open it",
+          "Pushing a change to GitHub updates the live site within minutes"
+        ],
+        "whyItMatters": "This is the moment your work becomes real — a URL you can put in your bio, share with friends, or add to a resume."
+      },
+      "toolPolicy": "preferPointing",
+      "remediationGoalID": "push-to-github",
+      "artifactDelta": "Live on the internet"
+    },
+    {
+      "id": "share-your-site",
+      "title": "Share your site",
+      "goal": "Open your live site, verify everything works, and share the link.",
+      "outcome": "You've opened your live site in a browser, confirmed it looks right, and have the URL ready to share.",
+      "coachAsk": "My site is deployed! Help me open it, check that everything looks right, and grab the link so I can share it.",
+      "doneWhen": "A browser window is visible showing the deployed site at a public GitHub Pages URL (https://username.github.io/...) — not a local file:// path — with the correct content and styling visible.",
+      "tips": [
+        "Open in a private/incognito window to see the fresh version",
+        "Test every link and page",
+        "Copy the URL — you earned it"
+      ],
+      "teachingContext": {
+        "concepts": [
+          "cache busting (hard refresh or incognito for fresh deploys)",
+          "testing navigation across pages on the live version",
+          "what to share: the URL in a bio, message, or social post"
+        ],
+        "commonMistakes": [
+          "checking the cached old version and thinking deploy failed",
+          "forgetting to test links on the live site (not just locally)",
+          "not saving the URL"
+        ],
+        "successExamples": [
+          "The live site loads with correct content, styling, and navigation",
+          "All links work on the live version",
+          "You have the URL copied and ready to share"
+        ],
+        "whyItMatters": "Building something is great. Sharing it is what makes it matter."
+      },
+      "toolPolicy": "pointOnly"
+    }
+  ],
+  "trackID": "web-fundamentals",
+  "trackTitle": "Web Fundamentals"
+}

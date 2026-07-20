@@ -1,0 +1,263 @@
+{
+  "id": "use-ai-tools",
+  "title": "Use AI Tools",
+  "subtitle": "Claude, ChatGPT & friends \u2014 for real work",
+  "description": "A Teachy how-to-use path: open a real AI tool, write clear prompts, get something usable, fix weak output, and explain what you did. AI fluency is Teachy itself \u2014 this is one tool path among many (websites, agents, Wispr Flow, etc.).",
+  "iconSystemName": "sparkles",
+  "estimatedMinutes": 40,
+  "startURL": "https://claude.ai",
+  "teacherName": "Teachy",
+  "trackID": "how-to-use",
+  "trackTitle": "How to use",
+  "trackOrder": 1,
+  "learningOutcomes": [
+    "Open and navigate a modern AI chat or coding assistant",
+    "Write a clear, scoped prompt for a real task",
+    "Get a usable result (text, code, or plan) on screen",
+    "Critique and fix weak AI output instead of accepting it blindly",
+    "Explain the task, the prompt, and the outcome in plain language"
+  ],
+  "artifact": {
+    "kind": "aiSkillDemo",
+    "icon": "sparkles",
+    "initialState": "no AI session, no clear task, no result",
+    "finalState": "a finished tiny win from AI plus a teach-back of how they got it",
+    "previewIfNoProgress": "No AI win yet \u2014 let's get one on screen"
+  },
+  "goals": [
+    {
+      "id": "fluency-open",
+      "title": "Open your AI",
+      "goal": "Have a real AI tool open and ready \u2014 Claude, ChatGPT, Gemini, Cursor, or similar.",
+      "outcome": "An AI chat or AI coding tool is open and recognizable on screen.",
+      "coachAsk": "Help me open an AI tool I can practice with. I'm learning AI fluency from zero if needed. Point at what to click. Claude (claude.ai), ChatGPT, Gemini, or Cursor are all fine \u2014 pick whatever is easiest on this Mac. Don't assume I know the names.",
+      "doneWhen": "An AI chat website or AI coding app is open and clearly visible on screen.",
+      "tips": [
+        "Browser chat apps are perfect for this path",
+        "Cursor or another AI IDE is fine if they already use one",
+        "If they're logged out, help them get to a usable screen first"
+      ],
+      "teachingContext": {
+        "concepts": [
+          "what an AI chat is (you type, it writes back)",
+          "common tools: Claude, ChatGPT, Gemini, Cursor",
+          "why practice on the real tool beats watching a demo"
+        ],
+        "commonMistakes": [
+          "opening a marketing homepage instead of the actual chat",
+          "getting stuck on signup walls \u2014 pick the tool that's already available",
+          "thinking they need to install everything before starting"
+        ],
+        "successExamples": [
+          "Claude or ChatGPT chat box is visible and ready to type",
+          "Cursor is open with a chat or agent panel ready"
+        ],
+        "whyItMatters": "You can't get fluent with a tool that isn't open. Muscle memory starts on the real UI.",
+        "teachBackPrompt": "which AI tool are we using, and what is it for in one sentence?",
+        "skipTeachBack": false
+      },
+      "toolPolicy": "preferPointing"
+    },
+    {
+      "id": "fluency-scoped-task-check",
+      "title": "Quick check: what's a scoped task?",
+      "goal": "Confirm you can spot a well-scoped AI task before picking your own.",
+      "coachAsk": "Quick multiple-choice check on task scoping.",
+      "interactiveMultipleChoice": {
+        "question": "Which of these is a well-scoped task for AI to help with?",
+        "options": ["Learn AI", "Make a tip calculator webpage", "Get better at coding"],
+        "correctAnswerIndex": 1,
+        "explanation": "Specific, small deliverables beat vague goals — that's what makes a task easy to prompt for and easy to know when it's done."
+      }
+    },
+    {
+      "id": "fluency-task",
+      "title": "Pick a tiny real task",
+      "goal": "Choose one small, concrete task AI can help with \u2014 not 'learn AI' in the abstract.",
+      "outcome": "They can say a single tiny task in plain language (e.g. tip calculator, email draft, rewrite a paragraph, plan a checklist).",
+      "coachAsk": "Help me pick one tiny real task to do with AI today. Good options: a tip calculator webpage, a short professional email, a grocery checklist, a rewrite of a messy paragraph, or a 5-step plan for something they care about. Get them to pick ONE. Write it as a clear one-liner.",
+      "doneWhen": "The learner has stated one concrete tiny task in plain language (spoken, typed, or visible on screen).",
+      "tips": [
+        "One feature or one short deliverable only",
+        "If they aim too big, shrink it until it fits in 10 minutes",
+        "Personal relevance beats abstract exercises"
+      ],
+      "teachingContext": {
+        "concepts": [
+          "scoped tasks beat vague asks",
+          "AI is a collaborator for a job-to-be-done",
+          "tiny wins build fluency faster than mega-projects"
+        ],
+        "commonMistakes": [
+          "asking for 'an app' with ten features",
+          "no success definition \u2014 'make it good'",
+          "tasks that require private company data they shouldn't paste"
+        ],
+        "successExamples": [
+          "Make a single HTML tip calculator",
+          "Draft a polite follow-up email under 120 words",
+          "Turn my bullet notes into a 5-item checklist"
+        ],
+        "whyItMatters": "Clear tasks make prompts better and make 'done' obvious.",
+        "teachBackPrompt": "what is the one tiny task you're going to get AI to help with?",
+        "skipTeachBack": false
+      },
+      "toolPolicy": "pointOnly"
+    },
+    {
+      "id": "fluency-prompt",
+      "title": "Write a clear prompt",
+      "goal": "Send one clear prompt: role or context, task, constraints, and what good looks like.",
+      "outcome": "A clear prompt is visible as typed or sent in the AI tool.",
+      "coachAsk": "Help me write and send one clear prompt for the tiny task we picked. Explain what a prompt is if needed \u2014 it's just the message you type. Coach them to include: what they want, any constraints (length, language, format), and what 'good' looks like. Point at where to type and how to send. Don't write the whole prompt for them unless they ask \u2014 coach them to type it.",
+      "doneWhen": "A clear, scoped prompt for the chosen task is visible as typed or already sent in the AI chat.",
+      "tips": [
+        "Plain language beats jargon",
+        "Constraints help: length, format, audience",
+        "One task per prompt to start"
+      ],
+      "teachingContext": {
+        "concepts": [
+          "prompt = instructions to the AI",
+          "context + task + constraints + success criteria",
+          "specific beats vague"
+        ],
+        "commonMistakes": [
+          "one-word prompts like 'code' or 'email'",
+          "no format or length constraints",
+          "pasting secrets or private data they shouldn't share"
+        ],
+        "successExamples": [
+          "Write a single HTML file for a tip calculator with bill, tip %, and total. Keep it simple.",
+          "Draft a 3-sentence follow-up email to a hiring manager, friendly and short."
+        ],
+        "whyItMatters": "Prompt quality is the core AI fluency skill for almost every role.",
+        "teachBackPrompt": "what makes a prompt clear enough that AI can actually help?",
+        "skipTeachBack": false
+      },
+      "toolPolicy": "preferPointing"
+    },
+    {
+      "id": "fluency-prompt-term-check",
+      "title": "Quick check: the right word",
+      "goal": "Confirm you know the term for what you just wrote.",
+      "coachAsk": "Quick vocabulary check.",
+      "interactiveFillInBlank": {
+        "prompt": "Fill in the blank: the message you type to tell the AI what you want is called a ___.",
+        "acceptableAnswers": ["prompt"],
+        "explanation": "That's the term — prompt. You'll hear it constantly once you start using AI tools seriously."
+      }
+    },
+    {
+      "id": "fluency-result",
+      "title": "Get a usable result",
+      "goal": "Have a usable AI result on screen for the task \u2014 draft, code, plan, or checklist.",
+      "outcome": "Visible AI output that addresses the tiny task (even if imperfect).",
+      "coachAsk": "Help me get a usable result from the AI for our tiny task. If they already sent the prompt, look at the response with them. If nothing useful came back, help them re-prompt once. Point at the output. If the task was code, help them see it clearly. Don't skip ahead to polishing yet \u2014 we just need a real result on screen.",
+      "doneWhen": "AI-generated content that addresses the chosen task is clearly visible on screen.",
+      "tips": [
+        "Imperfect is fine \u2014 we fix next",
+        "If the model refused or failed, re-scope the prompt",
+        "Scroll so the key result is visible for verification"
+      ],
+      "teachingContext": {
+        "concepts": [
+          "AI returns a first draft, not magic truth",
+          "you still own the work",
+          "seeing the result is required before judging quality"
+        ],
+        "commonMistakes": [
+          "stopping after a vague or empty reply",
+          "accepting the first word without reading",
+          "hiding the result so nothing can be checked"
+        ],
+        "successExamples": [
+          "HTML or code block for the tip calculator is on screen",
+          "Email draft is fully visible in the chat",
+          "Checklist or plan is readable end to end"
+        ],
+        "whyItMatters": "Fluency means producing something real, not talking about AI in theory.",
+        "teachBackPrompt": "what did the AI give you, in one sentence?",
+        "skipTeachBack": false
+      },
+      "toolPolicy": "helpWhenStuck"
+    },
+    {
+      "id": "fluency-critique",
+      "title": "Critique and fix",
+      "goal": "Improve the result once: spot a flaw, re-prompt or edit, and get a better version.",
+      "outcome": "A second, improved version is on screen, or a clear edit they made themselves.",
+      "coachAsk": "Help me critique the AI output and improve it once. Look at the screen together. Point out one real issue (too vague, wrong tone, missing piece, bug). Help them either edit it themselves or send a short follow-up prompt to fix that one issue. Celebrate the better version.",
+      "doneWhen": "An improved second version of the result is visible, or a clear manual edit fixed a real issue.",
+      "tips": [
+        "One fix at a time",
+        "Follow-up prompts can say: keep everything else, change only X",
+        "It's OK to edit the output by hand \u2014 that's still fluency"
+      ],
+      "teachingContext": {
+        "concepts": [
+          "AI is wrong often \u2014 critique is a skill",
+          "iteration: draft \u2192 feedback \u2192 better draft",
+          "you are the editor-in-chief"
+        ],
+        "commonMistakes": [
+          "shipping the first draft untouched",
+          "rewriting everything instead of one targeted fix",
+          "not verifying code or facts when it matters"
+        ],
+        "successExamples": [
+          "Follow-up: make the email shorter and less formal",
+          "They fixed a bug in the HTML and refreshed the page",
+          "Checklist now has the missing step they asked for"
+        ],
+        "whyItMatters": "Professionals don't accept AI blindly \u2014 they steer it.",
+        "teachBackPrompt": "what was wrong with the first version, and how did you fix it?",
+        "skipTeachBack": false
+      },
+      "toolPolicy": "helpWhenStuck"
+    },
+    {
+      "id": "fluency-loop-checklist",
+      "title": "Quick self-check",
+      "goal": "Confirm you actually followed the AI fluency loop before wrapping up.",
+      "coachAsk": "Quick self-check before we wrap up.",
+      "interactiveChecklist": {
+        "prompt": "Before moving on, confirm:",
+        "items": ["Picked one scoped task", "Sent a clear prompt", "Looked at the actual result", "Fixed or improved it once"]
+      }
+    },
+    {
+      "id": "fluency-teachback",
+      "title": "Explain the win",
+      "goal": "Explain in plain words: the task, the prompt approach, the result, and one thing they'd do next time.",
+      "outcome": "They can teach back the loop without reading the chat history word-for-word.",
+      "coachAsk": "Do a short teach-back. Ask them to explain in their own words: (1) what task they chose, (2) how they prompted, (3) what they got, (4) how they improved it, (5) one thing they'd try next time at work. Use [INFO] and [TODO]. Keep it warm and short \u2014 this is the AI fluency finish line.",
+      "doneWhen": "The learner has explained the task, how they used AI, and the outcome in their own words (voice or text).",
+      "tips": [
+        "Plain language is a feature",
+        "If they blank, scaffold with chips: task / prompt / fix",
+        "Tie it back to their real job if they mention one"
+      ],
+      "teachingContext": {
+        "concepts": [
+          "prot\u00e9g\u00e9 effect \u2014 teaching locks in skill",
+          "AI fluency = task \u2192 prompt \u2192 result \u2192 critique",
+          "this loop transfers to any role"
+        ],
+        "commonMistakes": [
+          "reading the chat aloud instead of explaining",
+          "skipping the critique step in the story",
+          "thinking fluency means memorizing tool names only"
+        ],
+        "successExamples": [
+          "I needed a short email, I asked for 3 sentences and a friendly tone, then shortened it",
+          "I asked for a tip calculator, ran it, fixed the percent math with a follow-up"
+        ],
+        "whyItMatters": "If you can teach the loop, you can reuse it on every new tool at work.",
+        "teachBackPrompt": "walk me through your AI win like you're teaching a coworker",
+        "skipTeachBack": false
+      },
+      "toolPolicy": "pointOnly"
+    }
+  ]
+}
