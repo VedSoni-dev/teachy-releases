@@ -76,6 +76,49 @@
       "hasVideoParts": false,
       "shipsWithApp": false,
       "blurb": "Coming — how to use Wispr Flow on real work."
+    },
+    {
+      "id": "code-with-ai",
+      "title": "Code with AI",
+      "subtitle": "Direct an AI coding agent like a pro",
+      "authorName": "Teachy",
+      "authorHandle": "teachy",
+      "estimatedMinutes": 40,
+      "goalCount": 8,
+      "trackTitle": "How to do",
+      "installURL": "",
+      "hasVideoParts": false,
+      "shipsWithApp": true,
+      "featured": true,
+      "blurb": "The instruct → verify → iterate loop: craft real build instructions, read what the agent did, recover when it breaks."
+    },
+    {
+      "id": "build-a-phone-agent",
+      "title": "Build a Phone Agent",
+      "subtitle": "A voice AI that answers calls for you",
+      "authorName": "Teachy",
+      "authorHandle": "teachy",
+      "estimatedMinutes": 35,
+      "goalCount": 7,
+      "trackTitle": "How to do",
+      "installURL": "",
+      "hasVideoParts": false,
+      "shipsWithApp": true,
+      "blurb": "From Vapi dashboard to a working voice assistant you can actually talk to — then iterate on how it sounds."
+    },
+    {
+      "id": "ai-fluency-essentials",
+      "title": "AI Fluency Essentials",
+      "subtitle": "Prompt, pick tools, and trust — the core skills",
+      "authorName": "Teachy",
+      "authorHandle": "teachy",
+      "estimatedMinutes": 25,
+      "goalCount": 7,
+      "trackTitle": "How to use",
+      "installURL": "",
+      "hasVideoParts": false,
+      "shipsWithApp": true,
+      "blurb": "What LLMs actually do, the anatomy of a strong prompt, picking the right tool, and verifying like a pro."
     }
   ]
 }
