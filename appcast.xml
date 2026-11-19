@@ -6,6 +6,15 @@
         <description>Teachy Sparkle feed — populated by scripts/release.sh when shipping GitHub Releases.</description>
         <language>en</language>
         <item>
+            <title>2.2</title>
+            <pubDate>Wed, 18 Nov 2026 18:25:04 -0600</pubDate>
+            <sparkle:version>5</sparkle:version>
+            <sparkle:shortVersionString>2.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.2</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <enclosure url="https://github.com/VedSoni-dev/teachy-releases/releases/download/v2.2/Teachy.dmg" length="16215736" type="application/octet-stream" sparkle:edSignature="R4KNy8EfkbSPXigT68FgeJsLIo6W9Us1QwvUnX7CvWy0DI9ZDJ8PimqC5kTX0mxbVx2vbyc+BxFMm0W+vl9eDA=="/>
+        </item>
+        <item>
             <title>2.1</title>
             <pubDate>Wed, 18 Nov 2026 12:08:13 -0600</pubDate>
             <sparkle:version>4</sparkle:version>
@@ -22,15 +31,6 @@
             <sparkle:minimumSystemVersion>14.2</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <enclosure url="https://github.com/VedSoni-dev/teachy/releases/download/v1.1/Teachy.dmg" length="11140103" type="application/octet-stream" sparkle:edSignature="Ry6z+4WdrFP0Lwr5bGA7le4Ijfvxkk8iZ//nguLPtB0YjXGmZNZ7xyKZf8irSGT/x+muybrqeCaMXVFre4snDQ=="/>
-        </item>
-        <item>
-            <title>1.0</title>
-            <pubDate>Mon, 13 Jul 2026 23:53:26 -0500</pubDate>
-            <sparkle:version>1</sparkle:version>
-            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.2</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/VedSoni-dev/teachy/releases/download/v1.0/Teachy.dmg" length="11798138" type="application/octet-stream" sparkle:edSignature="9VMMgkf5LWLO5zgxztQFbFdvDhLvxXS8BFWtICe40aOGUMvp34+SS1JkOXq5+i1pQZr0E24WkEVsIW9yG/aDCQ=="/>
         </item>
     </channel>
 </rss>
