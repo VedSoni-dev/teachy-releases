@@ -18,10 +18,10 @@
             <title>2.1</title>
             <pubDate>Wed, 18 Nov 2026 12:08:13 -0600</pubDate>
             <sparkle:version>4</sparkle:version>
-            <sparkle:shortVersionString>2.1</sparkle:shortVersionString>
+            <sparkle:shortVersionString>2.3</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.2</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/VedSoni-dev/teachy-releases/releases/download/v2.1/Teachy.dmg" length="16140799" type="application/octet-stream" sparkle:edSignature="3O3FhKahL7AhaNcxHLUaSQB7Wxo35bnG6qtrKk2t6Pw6XQB9JFm+65BMs8jlZrhVPhgbOfOP2SBw09TNxzHuAA=="/>
+            <enclosure url="https://github.com/VedSoni-dev/teachy-releases/releases/download/v2.3/Teachy.dmg" length="16578986" type="application/octet-stream" sparkle:edSignature="KyA4c4JN1Xv2+6WSpb7ecaAxhkZhPKFxF+eQ0Ks6mTnNLDGwWI5kAWlzSDGJ8lkRMpnVadmpU2fCTeDYv48bAQ=="/>
         </item>
         <item>
             <title>1.1</title>
